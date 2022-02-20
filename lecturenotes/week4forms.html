@@ -1,0 +1,60 @@
+<!-- form element
+    <form action=""method"">
+    What is Get - sends the form data across the url
+    What is Post - sends the form data on a special header with the http request
+    - emails are sent from forms 
+Form types (6): 
+input with type text: short test like a person's name
+- input is a void tag, label tags are not: 
+text area: long text like comments (can pull and make larger)
+- 
+input with type submit: sends form ex: submit button 
+input with type radio: choice that only allows one answer
+- the names must be the same, but the ids could be different 
+type checkbox: choice that allows more than one answer
+- have their own names, unlike radio buttons
+select box: drop down
+-->
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="uft-8">
+        <title>Week 4 Forms</title>
+    </head>
+    <body>
+        <h1>Takeout Form</h1>
+        <!-- the action attribute type the name of the place that is going to process the form-->
+        <form action="" method="post">
+            <label for="fullname">Full Name</label>
+            <!-- id specifies an element, the value of the ID must agree with the for-->
+            <input type="text" name="full name" id="fullname"><br>
+            <label for="orderiten">Order Item</label>
+            <input type="text" name="orderitem" id="orderitem"><br>
+            <label for="specialrequest">Special Request</label>
+            <textarea name="specialrequest" id="specialrequest"></textarea><br>
+            
+            <p><strong>do you want to pay?</strong></p>
+            <label for="insotre">pay in store</label>
+            <input type="radio" id="instore" name="howpay">
+            <label for="online">pay online</label>
+            <input type="radio" id="online" name="howpay"><br>
+
+            <p><strong>Add Condiments</strong></p>
+            <label for="bbq">BBQ Sauce</label>
+            <input type="checkbox" id="bbq" name="bbq">
+            <label for="ketchup">ketchup</label>
+            <input type="checkbox" id="ketchup" name="ketchup"><br>
+
+            <label for="pickup">Pickup Time</label>
+            <select id="pickup" name="pickup">
+                <option value="morning">morning</option>
+                <option value="afternoon">afternoon</option>
+                <option value="eventing">evening</option><br>
+            </select>
+
+
+           <input type="submit" value="send order"> 
+            <!-- input is a void tag, no close-->
+        </form>
+    </body>
+</html>
