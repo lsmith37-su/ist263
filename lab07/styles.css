@@ -8,3 +8,5 @@ nav {background-color: #F04DE2;
 nav a {color: #F0F6F6;}
 nav a:hover {background-color: #91FF5E;
     color: #000;}
+footer p {float: right;}
+.stopfloating {clear: both;}
