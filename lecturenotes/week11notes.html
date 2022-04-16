@@ -1,0 +1,49 @@
+<!DOCTYPE html> <!--Accessibility-->
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /*
+        STYLE - skip to content pushes one down to the main content (USE FOR THE LAB)
+        1. HTML LINK TO ANCHOR TO OUR CONTENT AREA
+        2. PUT AN ID ATTRIBUTE INTO THE PLACE YOU WANT THE ANCHOR TO GO -- LINKING WITHIN THE PAGE TO A DIFF PLACE IN THE PAGE
+        3. HIDE & SHOW SKIP TO CONTENT (WITH CSS MAGIC)
+        4. STYLE 'SKIP TO CONTENT' LINK
+        */
+        #skip { /* 4. */
+            position: absolute; /*absolute means take it out of the page flow & use a left tag to set position*/
+            left: -999px; /*common web dev method to make an item disapear, use a sudo selector to bring it back into view*/
+            background-color: orange;
+            padding: 5px; /*margin outside the box, padding inside the box space*/
+        }
+        #skip:focus {
+            left: 10px;
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <a href="#content" id="skip" tabindex="1">Skip to Content</a> <!-- 1. --> <!--id is a unique way to identify an element-->
+        <a href="http://www.twitter.com" tabindex="5">Twitter</a> <!--tabindex determines the order tabing through links executes-->
+        <a href="index.html" tabindex="2">Home</a>
+        <a href="skills.html" tabindex="3">Skills</a>
+        <a href="contact.html" tabindex="4">Contact</a>
+    </nav>
+    <main>
+        <img alt="">
+        <h1>Accessibility</h1> <!--only allowed one h1 tag-->
+        <h2>Semantic tags</h2>
+        <h3>Aside</h3>
+        <h3>Nav</h3>
+        <h3>Footner</h3>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto mollitia sed quia quisquam. Ad voluptatem facere numquam id. Voluptate consequuntur vel velit veritatis voluptatem molestias magni quas illum reprehenderit vero.</p>
+        <h2>Heading Tags in Hierarchy</h2>
+    </main>
+    <footer id="content"> <!--2. id must match href link in step 1-->
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sunt earum quasi ad nulla, magni expedita reprehenderit quo laborum atque dicta numquam totam nemo nam. Aliquid quo vero suscipit fugit placeat?</p>
+    </footer>
+</body>
+</html>
