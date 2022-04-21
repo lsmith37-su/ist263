@@ -5,15 +5,52 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Page2</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+        .general {
+            font-family: 'Open Sans', sans-serif;}
+        nav {
+            background-color: #D4D4D4;
+            padding: 10px;
+            margin-bottom: 30px;}
+        nav a:hover {
+            background-color: #90E0EF;}
+        nav a {
+            display: block;}
+        .navRow {
+            display: flex;}
+        .navTitle {
+            flex: 5;}
+        .navPage {
+            flex: 1;}
+        .main {
+            margin: 10px 100px;}
+        .reasonsList {
+            border: 2px solid #0077B6; 
+            background-color: #90E0EF; /*border is a combo property that takes 3 values*/
+            padding: 0px 20px; /*space inside box: top and bottom no padding*/
+            margin: 50px;}
+        p, h1, h2, h3, .reasonsList, footer {color: #00426B;}
+        .center {
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+            width: 100%;
+            }
+        #finalPara {padding-bottom: 100px;}
+    </style>
 </head>
-<body>
-    <nav>
-        <a href="home.html">Home</a> |
-        <a href="page2.html">Page2</a> |
-        <a href="page3.html">Page3</a>
+<body class="general">
+    <nav> 
+        <div class="navRow">
+            <div class="navTitle">AI Bill of Rights Campaign</div>
+            <div class="navPage"><a href="home.html">About</a></div>
+            <div class="navPage"><a href="page2.html">EU's Approach</a></div>
+            <div class="navPage"><a href="page3.html">Rights</a></div>    
+        </div>
     </nav>
-    <header><img class="" src="../media/document.jpg" alt="page banner, image of cursive text in a book"></header>
-    <main>
+    <header><img class="center" src="../media/document.jpg" alt="page banner, image of cursive text in a book"></header>
+    <main class="main">
         <h1>European Data Protection Legislation </h1>
         <h2>As the United States government develops its data protection regulations, policy makers should look to the example set by the EU.</h2>
         <div>
@@ -39,9 +76,15 @@
             </div>
             <div>
                 <p>Step 1 involves registering the high-risk system with the EU Commission. The AI system must then undergo a conformity assessment to ensure it complies with all national safety requirements. After all tests have been passed, the system may be registered as a stand-alone AI system in the EU’s database. Once the declaration of conformity has been signed the system can be placed on the market.</p>
-                <p>The U.S. should consider following the EU’s AI Act provides a scientifically sound framework that allows for flexibility and innovation in the AI community. The framework does not stifle growth, rather, it protects people and builds trust in AI systems which is necessary for a future dominated by AI technology.</p>
+                <p id="finalPara">The U.S. should consider following the EU’s AI Act provides a scientifically sound framework that allows for flexibility and innovation in the AI community. The framework does not stifle growth, rather, it protects people and builds trust in AI systems which is necessary for a future dominated by AI technology.</p>
             </div>
-        </div>      
+        </div>  
+    <footer>
+        <hr>
+        &copy; 2020
+        <p>"Might as well be dinner." - Micheal Scott</p>
+        <div class="stopfloating"></div>
+    </footer>    
     </main>
 </body>
 </html>

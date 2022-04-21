@@ -17,14 +17,11 @@
                 display: flex; /*define container that is the flexbox, any child in it is a column in the container */
             }
             /* VVV this descendant delector selects all divs inside the element with class of row 2 */ 
-            .row2 div {
+            .row2 .row1 div {
                 flex: 1; /* 1 represents what portion of the row it takes, will fill to the wideth of the page*/
             }
             .sealcol {flex: 2;}
             .row1cols {flex: 1;}
-            .row1 div {
-                flex: 1;
-            }
             .row1 {border: 1px solid lightskyblue}
             .seal {margin: 30px;}
             .sealcol p {margin: 30px;}

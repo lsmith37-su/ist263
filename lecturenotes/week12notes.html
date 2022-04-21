@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script> 
+        function firstfunction () {
+            alert('Hello World!');
+        } // alerts before page fully loads, usually an alert is prompted by an event - must call it to tell it to run
+        function secondFunction () {
+            alert('This is a mousover event.');
+        }
+    </script> 
+</head>
+<body>
+    <h1 onmouseover="secondFunction();">JavaScript</h1>
+    <p>We are learning JavaScript</p>
+    <p>JavaScript is case sensitive.</p>
+    <p><a href="https://www.amazon.com" onclick="firstfunction();">Amazon</a></p> <!--onclick is a _____ and its value is a JavaScript function-->
+    
+</body>
+</html>
