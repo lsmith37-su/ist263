@@ -6,13 +6,112 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Page3</title>
 </head>
-<body>
-    <nav>
-        <a href="home.html">Home</a> |
-        <a href="page2.html">Page2</a> |
-        <a href="page3.html">Page3</a>
+<style>
+    @import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+    .general {
+        font-family: 'Open Sans', sans-serif;
+        padding-left: 10%;
+        padding-right: 10%;
+    }
+    @media only screen and (max-width: 1080px)  {
+        .general {
+            padding-left: 0%;
+            padding-right: 0%;
+        }
+    }
+    nav {
+        background-color: #fff;
+        margin-bottom: 10px;
+    }
+    nav a:link { text-decoration: none; color: #442e62; }
+    nav a:visited { text-decoration: none; color: #442e62; }
+    nav a:hover {
+        background-color: #15D01E;
+        color: white;
+        text-decoration: none;
+    }
+    nav a:active {text-decoration: none; color: #442e62;}
+    .navRow {
+        background-color: #fff; 
+        display: flex; 
+        justify-content: center;
+        margin-top: 50px;
+    }
+    .navRow div {margin: 10px;
+    }
+    nav a {
+        font-size: medium;
+    }
+    .main {
+        margin: 10px 100px;
+        padding-bottom: 50px;
+    }
+    .reasonsList {
+        border: 2px solid #A16BE8; 
+        background-color: #fff; /*border is a combo property that takes 3 values*/
+        padding: 5px 20px 30px 20px; /*TOP, LEFT, BOTTOM, RIGHT*/
+        margin: 50px;
+    }
+    p, .reasonsList, footer {color: #442e62;}
+    h1 {color: #A16BE8;}
+    h2, h3 {color: #A16BE8;}
+    .center {
+        display: block; 
+        margin-left: auto;
+        margin-right: auto;
+        width: 100%;
+    }
+    #finalPara {padding-bottom: 40px;}
+    @media only screen and (min-width: 1080px) {
+        .center {max-width: 90%;}}
+    .docIcon {
+        display: block; 
+        margin-left: auto;
+        margin-right: 8px;
+        width: 100%;
+    }
+    .linkToBrief {
+        display: flex;
+        justify-content: center;
+    }
+    .reasonlist {
+        display: flex;
+    }
+    .pageTitle {
+        color: #A16BE8;
+        font-size: 3em;
+        margin-top: 30px;
+    }
+    .row1, .row2 {
+        display: flex
+    }
+    .row2 {
+        justify-content: space-between;
+    }
+    .col1 {
+        flex: 1;
+        justify-content: center;
+    }
+    .col2 {
+        flex: 2
+    }
+    .containterLast {      
+        background-color: #E4F0E7;
+        padding: 2.5%;
+        border-radius: 10px;
+        margin: 2%;
+    }
+</style>
+<body class="general">
+    <nav>         
+        <div class="navRow">    
+            <div class="navhome"><a href="home.html">About</a></div>
+            <div class="navPage"><a href="page2.html">EU's Approach</a></div>
+            <div class="navPage"><a href="page3.html">Rights</a></div>    
+        </div>
+        <p class="pageTitle" style="text-align:center">AI Bill of Rights Campaign</p>
     </nav>
-    <header><img class="" src="../media/document.jpg" alt="page banner, image of cursive text in a book"></header>
+    <header><img class="center" src="../media/ist263-header.jpg" alt="page banner, image of cursive text in a book"></header>
     <main>
         <h1>Three necessary provisions</h1>
         <h2>The AI centered Bill of rights must contain these three provisions to establish the most basic freedom and privacy standards, the bare minimum.</h2>
@@ -44,7 +143,13 @@
                 </div>
                 <p>Many workplaces implemented employee surveillance technology (ex: monitoring keystrokes, video surveillance, monitoring biometric markers). The key issue here is that some lawmakers believe these tools to be intrusive, discriminatory, and in some cases illegal. However, because of the lack of legislation regarding AI, these companies continue to release AI-software that affect our work and other aspects of our lives.</p>
             </div>   
-        </div>   
+        </div>  
+        <footer>
+            <hr>
+            &copy; 2020
+            <p>IST263 Final Project by Lilianna Smith '24</p>
+            <div class="stopfloating"></div>
+        </footer> 
     </main>
 </body>
 </html>

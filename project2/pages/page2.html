@@ -8,83 +8,149 @@
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
         .general {
-            font-family: 'Open Sans', sans-serif;}
+            font-family: 'Open Sans', sans-serif;
+            padding-left: 10%;
+            padding-right: 10%;
+        }
+        @media only screen and (max-width: 1080px)  {
+            .general {
+                padding-left: 0%;
+                padding-right: 0%;
+            }
+        }
         nav {
-            background-color: #D4D4D4;
-            padding: 10px;
-            margin-bottom: 30px;}
+            background-color: #fff;
+            margin-bottom: 10px;
+        }
+        nav a:link { text-decoration: none; color: #442e62; }
+        nav a:visited { text-decoration: none; color: #442e62; }
         nav a:hover {
-            background-color: #90E0EF;}
-        nav a {
-            display: block;}
+            background-color: #15D01E;
+            color: white;
+            text-decoration: none;
+        }
+        nav a:active {text-decoration: none; color: #442e62;}
         .navRow {
-            display: flex;}
-        .navTitle {
-            flex: 5;}
-        .navPage {
-            flex: 1;}
+            background-color: #fff; 
+            display: flex; 
+            justify-content: center;
+            margin-top: 50px;
+        }
+        .navRow div {margin: 10px;
+        }
+        nav a {
+            font-size: medium;
+        }
         .main {
-            margin: 10px 100px;}
+            margin: 10px 100px;
+            padding-bottom: 50px;
+        }
         .reasonsList {
-            border: 2px solid #0077B6; 
-            background-color: #90E0EF; /*border is a combo property that takes 3 values*/
-            padding: 0px 20px; /*space inside box: top and bottom no padding*/
-            margin: 50px;}
-        p, h1, h2, h3, .reasonsList, footer {color: #00426B;}
+            border: 2px solid #A16BE8; 
+            background-color: #fff; /*border is a combo property that takes 3 values*/
+            padding: 5px 20px 30px 20px; /*TOP, LEFT, BOTTOM, RIGHT*/
+            margin: 50px;
+        }
+        p, .reasonsList, footer {color: #442e62;}
+        h1 {color: #A16BE8;}
+        h2, h3 {color: #A16BE8;}
         .center {
-            display: block;
+            display: block; 
             margin-left: auto;
             margin-right: auto;
             width: 100%;
-            }
-        #finalPara {padding-bottom: 100px;}
+        }
+        #finalPara {padding-bottom: 40px;}
+        @media only screen and (min-width: 1080px) {
+            .center {max-width: 90%;}}
+        .docIcon {
+            display: block; 
+            margin-left: auto;
+            margin-right: 8px;
+            width: 100%;
+        }
+        .linkToBrief {
+            display: flex;
+            justify-content: center;
+        }
+        .reasonlist {
+            display: flex;
+        }
+        .pageTitle {
+            color: #A16BE8;
+            font-size: 3em;
+            margin-top: 30px;
+        }
+        .row1, .row2 {
+            display: flex
+        }
+        .row2 {
+            justify-content: space-between;
+        }
+        .col1 {
+            flex: 1;
+            justify-content: center;
+        }
+        .col2 {
+            flex: 2
+        }
+        .containterLast {      
+            background-color: #E4F0E7;
+            padding: 2.5%;
+            border-radius: 10px;
+            margin: 2%;
+        }
     </style>
 </head>
 <body class="general">
-    <nav> 
-        <div class="navRow">
-            <div class="navTitle">AI Bill of Rights Campaign</div>
-            <div class="navPage"><a href="home.html">About</a></div>
+    <nav>         
+        <div class="navRow">    
+            <div class="navhome"><a href="home.html">About</a></div>
             <div class="navPage"><a href="page2.html">EU's Approach</a></div>
             <div class="navPage"><a href="page3.html">Rights</a></div>    
         </div>
+        <p class="pageTitle" style="text-align:center">AI Bill of Rights Campaign</p>
     </nav>
-    <header><img class="center" src="../media/document.jpg" alt="page banner, image of cursive text in a book"></header>
+    <header><img class="center" src="../media/ist263-header.jpg" alt="page banner, image of cursive text in a book"></header>
     <main class="main">
         <h1>European Data Protection Legislation </h1>
         <h2>As the United States government develops its data protection regulations, policy makers should look to the example set by the EU.</h2>
-        <div>
-            <div>
-                <div>
+        <div class="mother">
+            <div class="row1">
+                <div class="col1">
                     <img src="../media/gdpr.jpeg" alt="a lock surrounded by a ring of stars inside a circle ">
                 </div>
-                <div>
+                <div class="col2">
                     <p>The EU is the first nation to have implemented the toughest and most expensive privacy law in the world known as the General Data Protection Regulation (GDPR). Known as the toughest privacy and security law in the world, GDPR must be enforced globally if users are based in the EU. Private and public companies are held to this standard. A policy included in GDPR protects an EU citizen’s “right to be forgotten” or the “right to erasure”. This means that one can request a private company to erase all their personal information. Adopting guidelines like GDPR will be the first step to having a safer and more trustworthy user experience in an AI-driven world.</p>
                     <p>In April 2021, the EU Commission adopted a proposal for a new AI-auding regulation. The framework is based on a risk-based assessment of AI systems through a rigorous auditing process with significant penalties if companies do not adhere to safety standards.</p>
                 </div>
             </div>
             <h3>The U.S. should consider following the EU’s AI Act provides a scientifically sound framework that allows for flexibility and innovation in the AI community. The framework does not stifle growth, rather, it protects people and builds trust in AI systems which is necessary for a future dominated by AI technology.</h3>
-            <div>
-                <div>
-                    <h3>The EU's Risk Based Approach</h3>
-                    <p>If a system is determined to be high-risk the developers must adhere to a strict, 4-step framework in order for their systems to be placed on the market. If significant changes are made to the system throughout its lifecycle, the system is required to go through the auditing process periodically.</p>
+           
+           
+            <div class="containterLast">
+                <h2>The EU's Risk Based Approach</h2>
+                <div class="row2">
+                    <div>
+                        <p>If a system is determined to be high-risk the developers must adhere to a strict, 4-step framework in order for their systems to be placed on the market. If significant changes are made to the system throughout its lifecycle, the system is required to go through the auditing process periodically.</p>
+                    </div>
+                    <div>
+                        <img src="../media/lifecycle-highrisk.jpeg" alt="Diagram of EU's Risk based approach to AI auditing">
+                    </div>
                 </div>
                 <div>
-                    <img src="../media/lifecycle-highrisk.jpeg" alt="Diagram of EU's Risk based approach to AI auditing">
-            
+                    <p>Step 1 involves registering the high-risk system with the EU Commission. The AI system must then undergo a conformity assessment to ensure it complies with all national safety requirements. After all tests have been passed, the system may be registered as a stand-alone AI system in the EU’s database. Once the declaration of conformity has been signed the system can be placed on the market.</p>
+                    <p id="finalPara">The U.S. should consider following the EU’s AI Act provides a scientifically sound framework that allows for flexibility and innovation in the AI community. The framework does not stifle growth, rather, it protects people and builds trust in AI systems which is necessary for a future dominated by AI technology.</p>
                 </div>
             </div>
-            <div>
-                <p>Step 1 involves registering the high-risk system with the EU Commission. The AI system must then undergo a conformity assessment to ensure it complies with all national safety requirements. After all tests have been passed, the system may be registered as a stand-alone AI system in the EU’s database. Once the declaration of conformity has been signed the system can be placed on the market.</p>
-                <p id="finalPara">The U.S. should consider following the EU’s AI Act provides a scientifically sound framework that allows for flexibility and innovation in the AI community. The framework does not stifle growth, rather, it protects people and builds trust in AI systems which is necessary for a future dominated by AI technology.</p>
-            </div>
+
         </div>  
     <footer>
         <hr>
         &copy; 2020
-        <p>"Might as well be dinner." - Micheal Scott</p>
+        <p>IST263 Final Project by Lilianna Smith '24</p>
         <div class="stopfloating"></div>
-    </footer>    
+    </footer>
     </main>
 </body>
 </html>
