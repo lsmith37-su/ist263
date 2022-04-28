@@ -1,0 +1,120 @@
+    @import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+    @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap');
+    @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;700&display=swap');
+    .general {
+        font-family: 'Open Sans', sans-serif;
+        padding-left: 10%;
+        padding-right: 10%;
+    }
+    @media only screen and (max-width: 1080px)  {
+        .general {
+            padding-left: 0%;
+            padding-right: 0%;
+        }
+    }
+    nav {
+        background-color: #fff;
+        margin-bottom: 10px;
+    }
+    nav a:link { text-decoration: none; color: #272432; }
+    nav a:visited { text-decoration: none; color: #272432; }
+    nav a:hover {
+        background-color: #15D01E;
+        color: white;
+        text-decoration: none;
+    }
+    nav a:active {text-decoration: none; color: #272432;}
+    .navRow {
+        background-color: #fff; 
+        display: flex; 
+        justify-content: center;
+        margin-top: 50px;
+    }
+    .navRow div {margin: 10px;
+    }
+    nav a {
+        font-size: medium;
+    }
+    .main {
+        margin: 10px 100px;
+        padding-bottom: 50px;
+    }
+    .reasonsList {
+        border: 2px solid #15D01E; 
+        border-radius: 10px;
+        background-color: #fff; /*border is a combo property that takes 3 values*/
+        padding: 5px 20px 30px 20px; /*TOP, LEFT, BOTTOM, RIGHT*/
+        margin: 50px;
+    }
+    p, .reasonsList, footer {color: #272432;}
+    h1 {color: #242ae9;}
+    h2 {color: #242ae9;}
+    h3 {color: #15D01E;}
+    .center {
+        display: block; 
+        margin-left: auto;
+        margin-right: auto;
+        width: 100%;
+    }
+    #finalPara {padding-bottom: 40px;}
+    @media only screen and (min-width: 1080px) {
+        .center {max-width: 90%;}}
+    .docIcon {
+        display: block; 
+        margin-left: auto;
+        margin-right: 8px;
+        width: 100%;
+    }
+    .linkToBrief {
+        display: flex;
+        justify-content: center;
+    }
+    .reasonlist {
+        display: flex;
+    }
+    .pageTitle {
+        color: #242ae9;
+        font-size: 3em;
+        margin-top: 30px;
+    }
+    .row1, .row2 {
+        display: flex
+    }
+    .row2 {
+        justify-content: space-between;
+    }
+    .row2 .row2-col1 {
+        flex: 2;
+    }
+    .row2 .row2-col2 {
+        flex: 1;
+    }
+    .col1 {
+        flex: 1;
+        justify-content: center;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        width: 50%;
+    }
+    .col2 {
+        flex: 2
+    }
+    .containterLast {      
+        border: 2px solid #15D01E;
+        padding: 2.5%;
+        border-radius: 10px;
+        margin: 2%;
+    }
+    .illustrations {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        width: 50%;
+    }
+    .box {
+        border: 2px solid #15D01E;
+        padding: 5px 20px 20px 20px;
+        border-radius: 10px;
+        margin: 50px;       
+    }

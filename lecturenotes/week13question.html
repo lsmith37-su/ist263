@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz Question</title>
+    <style>
+        body {
+            font-size: large;
+        }
+    </style>
+    <script> 
+        function rightAnswer () { // JavaScript uses camel case 
+            document.getElementById("right").innerHTML = "False is correct!"; // spacing and semicolons are finiky, pay attention to syntax 
+        }
+        function wrongAnswer () {
+            document.getElementById("wrong").innerHTML = "True is incorrect :-(";
+        }
+    </script>
+</head>
+<body>
+    <p>Java and JavaScript are the same thing. TRUE or FALSE</p>
+    <p id="wrong" onclick="wrongAnswer()">True</p> <!--Javascript identifies the element by ID; needs an EVENT to trigger the function-->
+    <p id="right" onclick="rightAnswer()">False</p>
+</body>
+</html>

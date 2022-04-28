@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz Question Participation</title>
+    <script> 
+        function rightAnswer () { // JavaScript uses camel case 
+            document.getElementById("right").innerHTML = "Correct...Free Speech galore?"; // spacing and semicolons are finiky, pay attention to syntax 
+        }
+        function wrongAnswer () {
+            document.getElementById("wrong").innerHTML = "False....seriously....";
+        }
+        function changeColor () {
+            document.getElementById("right").style.color = "green"; 
+        }
+    </script>
+</head>
+<body>
+    <p>Mr. Musk owns Twitter. TRUE or FALSE</p>
+    <p id="wrong" onclick="wrongAnswer()">False</p> <!--Javascript identifies the element by ID; needs an EVENT to trigger the function-->
+    <p id="right" onclick="rightAnswer(), changeColor()">True</p> 
+</body>
+</html>
