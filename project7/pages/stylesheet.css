@@ -8,7 +8,7 @@
     padding-left: 225px;
     padding-right: 225px;
 }
-@media only screen and (max-width: 1450px)  {
+@media only screen and (max-width: 1080px)  {
     #row2-col1id {flex: 1;}
     .reasonsList {min-width: 250px;}
     .home-p {min-width: 250px;}
@@ -118,6 +118,7 @@ h3 {color: #15D01E; margin-bottom: 10px;}
     padding: 2.5%;
     border-radius: 10px;
     margin: 2%;
+    margin-bottom: 20px;
 }
 .illustrations {
     display: block;
@@ -141,4 +142,5 @@ h3 {color: #15D01E; margin-bottom: 10px;}
 }
 #gradient {
     background-image: linear-gradient(#15D01E, white 70%);
+    margin-top: 20px;
   }
