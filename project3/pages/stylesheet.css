@@ -9,16 +9,16 @@
     padding-right: 225px;
 }
 @media only screen and (max-width: 1450px)  {
+    .general {
+        padding-left: 0%;
+        padding-right: 0%;
+    }
     #row2-col1id {flex: 1;}
     .reasonsList {min-width: 250px;}
     .home-p {min-width: 250px;}
     .general {
         padding-left: 10px;
         padding-right: 10px;
-    }
-    .main {
-        margin: auto;
-        padding-bottom: 150px;
     }
 }
 nav {
@@ -45,7 +45,7 @@ nav a {
     font-size: medium;
 }
 .main {
-    margin: 10px, 15px, 10px, 15px;
+    margin: 10px 100px;
     padding-bottom: 50px;
 }
 .reasonsList {
@@ -139,6 +139,3 @@ h3 {color: #15D01E; margin-bottom: 10px;}
     height: auto;
     width: auto\9; 
 }
-#gradient {
-    background-image: linear-gradient(#15D01E, white 70%);
-  }
